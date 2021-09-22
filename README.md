@@ -5,12 +5,16 @@ Pré-requis installer Docker et Docker Compose:
 - **[Docker](https://docs.docker.com/get-docker/)**
 - **[Docker-compose](https://docs.docker.com/compose/install/)**
 
-→ Installer l'environnement de dev :
+Installer l'environnement de dev :
 ```
 git clone https://github.com/AxelBlanchardon/Docker-LAMP-PHP8-MYSQL.git
 ```
 ```
 cd Docker-LAMP-PHP8-MYSQL
+```
+→ Construire les images et démarrer les containers en tache de fond (utiliser --build pour re builder les images) :
+```
+sudo docker-compose up -d
 ```
 → Lister vos containers actifs :
 ```

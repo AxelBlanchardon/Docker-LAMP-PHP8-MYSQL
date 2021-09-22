@@ -26,3 +26,14 @@ sudo docker exec -ti php-apache bash
 ```
 symfony new my_project_name --full
 ```
+```
+cd my_project_name
+```
+→ Lancer le serveur interne de Symfony en arrière plan :
+```
+symfony serve -d
+```
+→ On peut donc lancer les commandes de Symfony, composer ou php bin/console et pour sortir du bash tapez : 
+```
+exit
+```

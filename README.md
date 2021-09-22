@@ -5,7 +5,7 @@ Les pré-requis :
 - **[Docker](https://docs.docker.com/get-docker/)**
 - **[Docker-compose](https://docs.docker.com/compose/install/)**
 
-→ Installe l'environnement de dev :
+→ Installer l'environnement de dev :
 ```
 git clone https://github.com/AxelBlanchardon/Docker-LAMP-PHP8-MYSQL.git
 ```

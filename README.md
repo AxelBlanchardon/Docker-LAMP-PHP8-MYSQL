@@ -1,7 +1,7 @@
 # Docker-LAMP-PHP8-MYSQL
 Installation d'un environnement de développement pour Symfony avec Docker qui comprend une stack LAMP : Debian 11, PHP8, MYSQL, Apache, Phpmyadmin, Symfony cli, Composer.
 
-Les pré-requis :
+Pré-requis installer Docker et Docker Compose:
 - **[Docker](https://docs.docker.com/get-docker/)**
 - **[Docker-compose](https://docs.docker.com/compose/install/)**
 
@@ -16,7 +16,7 @@ cd Docker-LAMP-PHP8-MYSQL
 ```
 sudo docker ps 
 ```
-Le nom du container qui contient php et apache a pour nom : "php-apache" comme définit dans le docker-compose.yml  :
+Le nom du container qui contient php et apache a pour nom : "php-apache" comme défini dans le docker-compose.yml  :
 
 → Lancer le bash de notre conteneur php afin d'intéragir avec la machine Debian :
 ```

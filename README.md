@@ -4,7 +4,7 @@ Installation d'un environnement de développement pour Symfony avec Docker qui c
 Pré-requis installer Docker et Docker Compose:
 - **[Docker](https://docs.docker.com/get-docker/)**
 - **[Docker-compose](https://docs.docker.com/compose/install/)**
-- Pour utiliser Docker sans sudo : https://docs.docker.com/engine/install/linux-postinstall/
+- Pour utiliser Docker sans sudo (optionnel pas securisé) : https://docs.docker.com/engine/install/linux-postinstall/
 
 Installer l'environnement de dev :
 ```
@@ -14,21 +14,21 @@ git clone https://github.com/AxelBlanchardon/Docker-LAMP-PHP8-MYSQL.git
 cd Docker-LAMP-PHP8-MYSQL
 ```
 
-→ Construire les images et démarrer les containers en tache de fond (utiliser --build pour re builder les images) :
+→ Construire les images et démarrer les containers en arrière plan (utiliser --build pour re builder les images) Par defaut utiliser sudo sous linux:
 ```
 docker-compose up -d
 ```
 
 → Lister vos containers actifs :
 ```
-sudo docker ps 
+docker ps 
 ```
 
 Le nom du container qui contient php et apache a pour nom : "php-apache" comme défini dans le docker-compose.yml  :
 
 → Lancer le bash de notre conteneur php afin d'intéragir avec la machine Debian :
 ```
-sudo docker exec -ti php-apache bash
+docker exec -ti php-apache bash
 ```
 
 → Creer son nouveau projet symfony (https://symfony.com/doc/current/setup.html) exemple :

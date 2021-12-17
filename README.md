@@ -39,9 +39,10 @@ symfony new my_project_name --full
 cd my_project_name
 ```
 
-→ Selon votre installation : Par defaut le dossier de notre projet symfony créé appartient a ROOT sous linux il faut donc modifier l'appartenance du dossier pour notre user :
+→ Donner les droits à tout le repertoire, remplaçer username par le meme nom que notre session locale
 ```
-sudo chown -R $USER my_project_name/
+adduser username
+chown username:username -R .
 ```
 
 → Lancer le serveur interne de Symfony en arrière plan :
